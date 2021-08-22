@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Contact</title>
+        <link rel="stylesheet" href="static/css/addcontacts.css">
+        <script type="text/javascript" src="/static/scripts/contact.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="/home">Home</a>
+            <a href="addcontacts">Add New Contact</a>
+        </div>
+        <div class="addcontacts">
+            <br>
+            <h2>Create a new contact</h2><br>
+            <form method="POST">
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" size="30" /><br><br>
+                <input type="text" id="name" name="name" placeholder="Name" size="30" /><br><br>
+                <input type="email" id="email" name="email" placeholder="Email" size="30" /><br><br>
+                <input type="text" id="secphone" name="secphone" placeholder="Secondary Phone Number" size="30" /><br><br>
+                <input type="email" id="secemail" name="secemail" placeholder="Secondary Email" size="30" /><br><br>
+                Birth date &nbsp;&nbsp; <input type="date" id="dob" name="dob" placeholder="Date of Birth" size="30" /><br><br>
+
+                <input type="button", id="register", value="Submit" onclick="validation()" />
+            </form>
+        </div>
+    </body>
+</html>

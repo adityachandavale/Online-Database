@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="static/css/home.css">
+        <script type="text/javascript" src="/static/scripts/home.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="/home">Home</a>
+            <a href="addcontacts">Add New Contact</a>
+        </div>
+
+        <div class="search">
+            <h2>Search Contact</h2><br><br>
+            <form method="POST">
+                <input type="text" id="name" name="name" placeholder="Enter Name" size="30"/><br><br><br>
+                <input type="button", id="search", value="Search" onclick="validation()" />
+            </form><br>
+        </div>
+        
+    </body>
+</html>
